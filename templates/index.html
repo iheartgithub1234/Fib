@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="utf-8">
+          <title>Fibonacci Calculator</title>
+     </head>
+     <body>
+          <h1>Fibonacci Sequence Calculator</h1>
+          <form method="POST">
+               <input id="number" name="number" autocomplete="off">
+               <button type="submit">Submit</button>
+          </form>
+          <p>
+               {% if number %}
+                    Output: {{ number }}
+               {% else %}
+                    Number will appear here.
+               {% endif %}
+          </p>
+     </body>
+</html>
